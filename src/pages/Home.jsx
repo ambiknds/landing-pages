@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   const landingPages = [
-    { name: 'SaaS Product', path: '/landing-page-1' },
+    { name: 'SaaS Product', path: '/saas-product' },
     { name: 'Online Course', path: '/online-course' },
     { name: 'Mobile App', path: '/landing-page-3' },
     { name: 'Event or Webinar', path: '/landing-page-4' },
@@ -29,7 +29,7 @@ function Home() {
       <h1 className="text-3xl font-bold text-gray-800 mb-8">Landing Pages</h1>
       <ul className="w-4/5 flex flex-wrap space-x-8">
         {landingPages.map((page, index) => (
-          <li key={index}>
+          <li key={index} className='bg-slate-200 shadow-xl border rounded p-4 m-2'>
             <Link
               to={page.path}
               className="text-lg text-blue-600 hover:text-blue-800 transition"
